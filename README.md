@@ -7,7 +7,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![Repository Size](https://img.shields.io/github/repo-size/temps-code/Personal---exercises?style=for-the-badge) ![Last Commit](https://img.shields.io/github/last-commit/temps-code/Personal---exercises?style=for-the-badge)
 
 ---
-
+</div>
 ## Introducción
 
 Bienvenido al repositorio de los ejercicios para la materia de **Diseño Web 2**. Este repositorio contiene todos los ejercicios prácticos que se realizan durante el desarrollo de la clase. Los ejercicios están enfocados en el uso de **JavaScript**, así como en la aplicación de conceptos de diseño web.
@@ -38,26 +38,9 @@ Para contribuir a este repositorio:
 2. Crea una nueva rama para tu ejercicio o solución.
 3. Realiza los cambios y añade nuevos archivos si es necesario.
 4. Envía una solicitud de extracción (pull request) para que tus cambios sean revisados y fusionados.
-
-## Contacto
-
-Si tienes preguntas o necesitas más información, no dudes en contactar:
-
-**Docente:** Ing. Fridel Omar Baldiviezo Osina  
-**Email:** [tj.fridel.baldiviezo.o@upds.net.bo](mailto:tj.fridel.baldiviezo.o@upds.net.bo)
-
-<div align="center">
-
-[![Email](https://img.shields.io/badge/Email-tj.fridel.baldiviezo.o%40upds.net.bo-blue?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tj.fridel.baldiviezo.o@upds.net.bo) 
-
-</div>
-
 ---
-
 <div align="center">
 
-**Universidad Privada Domingo Savio** - [Sitio Web](https://portal.upds.edu.bo/index) 
-
-[![University Website](https://img.shields.io/badge/University_Website-Portal%20UPDS-blue?style=for-the-badge&logo=globe&logoColor=white)](https://portal.upds.edu.bo/index)
+[![University Website](https://img.shields.io/badge/Universidad_Privada_Domingo_Savio-Portal%20UPDS-blue?style=for-the-badge&logo=globe&logoColor=white)](https://portal.upds.edu.bo/index)
 
 </div>
