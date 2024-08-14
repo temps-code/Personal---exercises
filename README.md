@@ -5,7 +5,7 @@
 **Universidad Privada Domingo Savio - Sede Tarija**
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![Repository Size](https://img.shields.io/github/repo-size/temps-code/Personal---exercises?style=for-the-badge) ![Last Commit](https://img.shields.io/github/last-commit/temps-code/Personal---exercises?style=for-the-badge)
-
+</div>
 ---
 
 ## Introducción
