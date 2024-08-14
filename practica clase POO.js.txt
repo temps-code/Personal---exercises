@@ -1,0 +1,94 @@
+/*
+Carrito de compras
+Crear una clase Producto con propiedades como nombre, precio y cantidad
+Crear una clase Carrito de Compras que pueda agregar productos, eliminar productos y modificar productos
+Implementar un metedo para aplicar descuentos a productos especificos
+Crear un metodo para gener un resumen de la compra
+*/
+class Producto {
+    constructor(nombre, cantidad, precioUnitario) {
+        this.nombre = nombre;
+        this.cantidad = cantidad;
+        this.precioUnitario = precioUnitario;
+        this.descuento = 0; // Descuento en porcentaje (0-100)
+        this.subTotal = this.calcularSubTotal();
+    }
+
+    calcularSubTotal() {
+        return (this.cantidad * this.precioUnitario) - (this.cantidad * this.precioUnitario * (this.descuento / 100));
+    }
+
+    setDescuento(descuento) {
+        if (descuento < 0 || descuento > 100) {
+            throw new Error("El descuento debe estar entre 0 y 100.");
+        }
+        this.descuento = descuento;
+        this.subTotal = this.calcularSubTotal();
+    }
+
+    mostrarProducto() {
+        return `Nombre: ${this.nombre}\tCantidad: ${this.cantidad}\tPrecio por unidad: ${this.precioUnitario.toFixed(2)}\tDescuento: ${this.descuento}%\tSub Total del producto: ${this.subTotal.toFixed(2)}`;
+    }
+}
+class CarritoDeCompras {
+    constructor() {
+        this.carrito = [];
+    }
+
+    agregarProductos(nombre, cantidad, precioUnitario) {
+        // Verifica si el producto ya existe en el carrito
+        let productoExistente = this.carrito.find(p => p.nombre.toLowerCase() === nombre.toLowerCase());
+        if (productoExistente) {
+            return `${nombre} ya existe en el carrito.`;
+        }
+        let producto = new Producto(nombre, cantidad, precioUnitario);
+        this.carrito.push(producto);
+        return `${nombre} agregado correctamente.`;
+    }
+
+    actualizarProducto(nombre, cantidad, precioUnitario) {
+        let indice = this.carrito.findIndex(p => p.nombre.toLowerCase() === nombre.toLowerCase());
+        if (indice !== -1) {
+            let producto = new Producto(nombre, cantidad, precioUnitario);
+            this.carrito[indice] = producto;
+            return `${nombre} actualizado correctamente.`;
+        }
+        return `${nombre} no se actualizó, ya que no se encuentra en el carrito.`;
+    }
+
+    eliminarProducto(nombre) {
+        let indice = this.carrito.findIndex(p => p.nombre.toLowerCase() === nombre.toLowerCase());
+        if (indice !== -1) {
+            this.carrito.splice(indice, 1);
+            return `${nombre} eliminado correctamente.`;
+        }
+        return `${nombre} no se eliminó, ya que no se encuentra en el carrito.`;
+    }
+
+    aplicarDescuento(nombre, descuento) {
+        if (descuento < 0 || descuento > 100) {
+            return "El descuento debe estar entre 0 y 100.";
+        }
+        let producto = this.carrito.find(p => p.nombre.toLowerCase() === nombre.toLowerCase());
+        if (producto) {
+            producto.setDescuento(descuento);
+            return `Descuento de ${descuento}% aplicado a ${nombre}.`;
+        }
+        return `${nombre} no se encontró en el carrito.`;
+    }
+
+    resumen() {
+        if (this.carrito.length === 0) {
+            console.log('El carrito está vacío.');
+            return;
+        }
+
+        let total = 0;
+        this.carrito.forEach(producto => {
+            console.log(producto.mostrarProducto());
+            total += producto.subTotal;
+        });
+
+        console.log(`Monto total del carrito: ${total.toFixed(2)}`);
+    }
+}
