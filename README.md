@@ -5,7 +5,7 @@
 **Universidad Privada Domingo Savio - Sede Tarija**
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![Repository Size](https://img.shields.io/github/repo-size/temps-code/Personal---exercises?style=for-the-badge) ![Last Commit](https://img.shields.io/github/last-commit/temps-code/Personal---exercises?style=for-the-badge)
-</div>
+
 ---
 
 ## Introducción
@@ -44,11 +44,11 @@ Para contribuir a este repositorio:
 Si tienes preguntas o necesitas más información, no dudes en contactar:
 
 **Docente:** Ing. Fridel Omar Baldiviezo Osina  
-**Email:** [tj.fridel.baldiviezo.o@upds.net.bo](mailto:tj.fridel.baldiviezo.o@upds.net.bo) 
+**Email:** [tj.fridel.baldiviezo.o@upds.net.bo](mailto:tj.fridel.baldiviezo.o@upds.net.bo)
 
 <div align="center">
 
-![Email](https://img.shields.io/badge/Email-tj.fridel.baldiviezo.o%40upds.net.bo-blue?style=for-the-badge&logo=gmail&logoColor=white) 
+[![Email](https://img.shields.io/badge/Email-tj.fridel.baldiviezo.o%40upds.net.bo-blue?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tj.fridel.baldiviezo.o@upds.net.bo) 
 
 </div>
 
@@ -58,6 +58,6 @@ Si tienes preguntas o necesitas más información, no dudes en contactar:
 
 **Universidad Privada Domingo Savio** - [Sitio Web](https://portal.upds.edu.bo/index) 
 
-![University Website](https://img.shields.io/badge/University_Website-Portal%20UPDS-blue?style=for-the-badge&logo=globe&logoColor=white)
+[![University Website](https://img.shields.io/badge/University_Website-Portal%20UPDS-blue?style=for-the-badge&logo=globe&logoColor=white)](https://portal.upds.edu.bo/index)
 
 </div>
